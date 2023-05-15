@@ -1,0 +1,301 @@
+div, section, article, footer {
+  padding: 0px;
+  margin: 0px;
+}
+
+/**** you may need this at design time*
+%div-section{
+	border: thin solid  #888;
+}
+/**************************************/
+@font-face {
+  font-family: article-font;
+  src: url(OpenSans-LightItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: body-font;
+  src: url(OpenSans-LightItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: heading-font;
+  src: url(OpenSans-Regular.ttf) format("truetype");
+}
+body {
+  font-family: body-font;
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+}
+
+article {
+  font-family: article-font;
+  font-size: 14px;
+  background-color: white;
+  color: #40180c;
+}
+
+table.t-colapse {
+  border-collapse: collapse;
+}
+table.t-colapse th {
+  background-color: #53F5DE;
+  color: #ac0a21;
+}
+table.t-colapse th, table.t-colapse td {
+  padding: 5px;
+}
+
+table.t-colapse tr:nth-child(even) {
+  background-color: #97EFF3;
+}
+
+table.t-colapse tr:nth-child(odd) {
+  background-color: #BFE7F3;
+}
+
+table.b-table {
+  border-collapse: collapse;
+  border-left: 0px;
+  border-right: 0px;
+  width: 100%;
+}
+table.b-table tr {
+  border-top: 2px solid #ddd;
+}
+table.b-table th {
+  background-color: #53F5DE;
+  color: #ac0a21;
+  font-weight: 900;
+}
+table.b-table th, table.b-table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border: 0px;
+  font-family: body-font;
+}
+table.b-table td {
+  background-color: #ac0a21;
+  color: #53F5DE;
+}
+
+ul.u-menu {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+ul.u-menu li {
+  border: thin solid #ec576b;
+  background-color: #BFE7F3;
+  color: #40180c;
+  display: block;
+  padding: 10px;
+}
+ul.u-menu li a {
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+}
+
+ul.u-nav {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+ul.u-nav li {
+  border: thin solid #ec576b;
+  background-color: #BFE7F3;
+  color: #40180c;
+  display: inline-block;
+  float: left;
+  margin-left: 1px;
+  padding: 10px;
+}
+ul.u-nav li a {
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+}
+
+ul.list {
+  padding: 5px;
+  margin: 0px;
+  list-style-type: none;
+  background-color: #97EFF3;
+}
+ul.list li {
+  display: block;
+  color: #40180c;
+  padding: 2px;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+.kool-heading {
+  font-family: heading-font !important;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.clear {
+  clear: both;
+}
+
+.std-input {
+  height: 30px;
+  border-radius: 5px;
+  color: #40180c;
+}
+
+.std-input_100 {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  color: #40180c;
+}
+
+.btn {
+  background-color: #BFE7F3;
+  color: #40180c;
+  padding: 10px;
+  border: thin solid #ec576b;
+  border-radius: 5px;
+}
+
+.btn-blue {
+  background-color: #1C13F6;
+  color: #e3ec09;
+}
+
+.btn-red {
+  background-color: #F7080E;
+  color: #08f7f1;
+}
+
+.bodered-div {
+  border: thin solid gray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.middle-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.stretch {
+  float: left;
+  margin-right: auto;
+  width: auto;
+}
+
+footer {
+  background-color: #323232;
+  color: #cdcdcd;
+}
+footer li {
+  list-style-type: none;
+}
+
+.special-article {
+  background-color: #BFE7F3;
+  color: #ec576b;
+  text-align: justify;
+  margin: 5px;
+  padding: 20px;
+}
+
+.big-awesome {
+  font-size: 64px;
+  color: #BFE7F3;
+  background-color: #ec576b;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+/* **/
+.div10, .div25, .div20, .div50, .div60, .div70, .div75, .div80, .div90, .div100 {
+  width: 99.9999%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablet: Anything smaller=mobile */
+  .div10 {
+    width: 9.9999%;
+  }
+  .div25, .div20 {
+    width: 39.9999%;
+  }
+  .div30, .div40 {
+    width: 49.9999%;
+  }
+  .div50, .div60, .div70, .div75, .div80, .div90 {
+    width: 99.9999%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .div10 {
+    width: 8.9999%;
+  }
+  .div20 {
+    width: 18.999%;
+  }
+  .div25 {
+    width: 23.999%;
+  }
+  .div30 {
+    width: 28.9999%;
+  }
+  .div40 {
+    width: 38.9999%;
+  }
+  .div50 {
+    width: 48.9999%;
+  }
+  .div60 {
+    width: 58.9999%;
+  }
+  .div70 {
+    width: 68.9999%;
+  }
+  .div75 {
+    width: 73.999%;
+  }
+  .div80 {
+    width: 78.999%;
+  }
+  .div90 {
+    width: 88.9999%;
+  }
+}
+.stretch {
+  display: inline-block;
+  float: left;
+}
+
+/* **
+@import 'div-sizes-proto.scss'
+/* **/
+
+/*# sourceMappingURL=prototype.css.map */

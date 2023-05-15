@@ -1,0 +1,44 @@
+body{
+	background-color: lightgray;
+	margin: 0px;
+}
+
+#my-header
+{
+	background-color: white;
+	padding: 10px;
+}
+
+.navigation-box ul
+{
+ display: flex;
+ flex-wrap: wrap;
+ list-style-type: none;
+ margin: 0px;
+}
+
+.navigation-box ul li
+{
+	display: block;
+	margin-right: 20px;
+	border: thick solid #bbbb66;
+	padding: 10px;
+}
+
+#banner
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: right;
+  background-color: black;
+}
+#banner-text{
+	width: 75%;
+	color: white;
+}
+#banner img
+{
+	width:25%;
+}
